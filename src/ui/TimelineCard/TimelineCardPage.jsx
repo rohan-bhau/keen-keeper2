@@ -26,7 +26,7 @@ const TimelineCardPage = () => {
   });
 
   
-  console.log(timeline);
+  // console.log(timeline);
   if (timeline.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[25vh] text-center p-6">
