@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathName = usePathname();
   const links = (
     <>
-      <li className="text-[16px]">
+      <li className="text-[16px] cursor-pointer">
         <Link
           className={
             pathName === "/"
@@ -27,7 +27,7 @@ const Navbar = () => {
           </button>
         </Link>
       </li>
-      <li className="text-[16px]">
+      <li className="text-[16px] cursor-pointer">
         <Link
           className={
             pathName === "/timeline"
@@ -44,7 +44,7 @@ const Navbar = () => {
           </button>
         </Link>
       </li>
-      <li className="text-[16px]">
+      <li className="text-[16px] cursor-pointer">
         <Link
           className={
             pathName === "/stats"

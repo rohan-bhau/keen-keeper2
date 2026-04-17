@@ -46,7 +46,7 @@ const RightCard = ({ friend }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Call */}
           <div
-            onClick={() => addToTiemeline(friend.name, "call")}
+            onClick={() => addToTiemeline(friend.name, "Call")}
             className="group border border-[#e9e9e9] shadow-md rounded-md p-5 cursor-pointer
              transform transition-all duration-200 ease-out
              hover:shadow-lg hover:scale-[1.03] hover:bg-gray-50
@@ -64,7 +64,7 @@ const RightCard = ({ friend }) => {
 
           {/* TExt */}
           <div
-            onClick={() => addToTiemeline(friend.name, "text")}
+            onClick={() => addToTiemeline(friend.name, "Text")}
             className="group border border-[#e9e9e9] shadow-md items-center rounded-md p-5 cursor-pointer
              transform transition-all duration-200 ease-out
              hover:shadow-lg hover:scale-[1.03] hover:bg-gray-50
@@ -82,7 +82,7 @@ const RightCard = ({ friend }) => {
 
           {/* Video */}
           <div
-            onClick={() => addToTiemeline(friend.name, "video")}
+            onClick={() => addToTiemeline(friend.name, "Video")}
             className="group border border-[#e9e9e9] shadow-md rounded-md p-5 cursor-pointer
              transform transition-all duration-200 ease-out
              hover:shadow-lg hover:scale-[1.03] hover:bg-gray-50
