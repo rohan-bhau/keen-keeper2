@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👥 KeenKeeper
 
-## Getting Started
+### *Keep Your Friendships Alive*
 
-First, run the development server:
+---
 
-```bash
+## 📌 Project Overview
+
+KeenKeeper is a responsive friendship management web application built with Next.js. It allows users to explore a list of friends, view detailed profiles, and interact with a clean, modern UI powered by dynamic routing and client-side data handling.
+
+This project demonstrates practical implementation of component-based architecture, routing, and data-driven UI design.
+
+---
+
+## 🌐 Live Demo
+
+🔗 https://keen-keeper2.vercel.app/
+
+---
+
+## 📂 Repository
+
+📁 https://github.com/rohan-bhau/keen-keeper2
+
+---
+
+## 🚀 Technologies Used
+
+* ⚡ Next.js (App Router)
+* ⚛️ React.js (Hooks & Context API)
+* 🎨 Tailwind CSS
+* 📦 JavaScript (ES6+)
+* 📄 JSON (Local Data Source)
+
+---
+
+## ✨ Features
+
+### 🧑‍🤝‍🧑 Friend Listing
+
+* Displays all friends in a structured card layout
+* Clean UI with consistent spacing and design
+
+### 🔗 Dynamic Routing
+
+* Click on any friend card to navigate to a unique detail page
+* Uses dynamic route handling in Next.js
+
+### 📄 Friend Details Page
+
+* Shows detailed information for each individual friend
+* Data is dynamically rendered based on route parameters
+
+### ⚡ Client-Side Data Handling
+
+* Loads data from a local JSON file
+* Efficient data flow using React hooks and/or context
+
+### 🧩 Component-Based Architecture
+
+* Reusable components (e.g., Friend Card, Sections)
+* Organized folder structure for scalability
+
+### 📱 Fully Responsive Design
+
+* Optimized for mobile, tablet, and desktop devices
+* Uses Tailwind utility classes for responsive layout
+
+### 🎯 Smooth User Experience
+
+* Fast navigation between pages
+* Clean and minimal UI without unnecessary clutter
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash id="setup001"
+git clone https://github.com/rohan-bhau/keen-keeper2.git
+cd keen-keeper2
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
+👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure (Simplified)
 
-## Learn More
+```
+keen-keeper2/
+├── app/
+│   ├── page.js
+│   ├── friends/
+│   │   └── [id]/page.js
+├── components/
+├── ui/
+├── public/
+│   └── friends.json
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 👨‍💻 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Rohan**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 GitHub: https://github.com/rohan-bhau
+
