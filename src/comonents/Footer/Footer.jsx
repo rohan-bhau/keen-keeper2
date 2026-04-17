@@ -5,9 +5,9 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#244D3F] text-center pt-20">
+    <div className="bg-[#244D3F] text-center pt-20 px-5">
       <div>
-        <h2 className="text-6xl font-bold text-[#ffffff] mb-4">KeenKeeper</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-[#ffffff] mb-4">KeenKeeper</h2>
         <p className="text-[#ffffff] mb-6 text-md">
           Your personal shelf of meaningful connections. Browse, tend, and
           nurture the relationships that matter most.
@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="flex justify-between container mx-auto text-[#ffffff] border-t border-[#1A8862] p-6">
+      <div className="lg:flex justify-between container mx-auto text-[#ffffff] border-t border-[#1A8862] p-6">
         <p>&copy; 2026 KeenKeeper. All rights reserved.</p>
         <ul className="flex gap-3">
           <li className="hover:text-orange-500 cursor-pointer">

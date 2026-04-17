@@ -5,7 +5,7 @@ import { IoMdAdd } from "react-icons/io";
 
 const Banner = () => {
   return (
-    <div className="container mx-auto pt-20">
+    <div className="container mx-auto pt-20 px-5">
       <div className="text-center">
         <h2 className="text-4xl font-bold text-[#1F2937] mb-2">
           Friends to keep close in your life
