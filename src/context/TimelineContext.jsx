@@ -1,5 +1,5 @@
 "use client";
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 import { toast } from "react-toastify";
 // import { toast } from "react-toastify";
 
@@ -8,6 +8,19 @@ const TimelineContext = createContext();
 export const TimelineProvider = ({ children }) => {
   const [timeline, setTimeline] = useState([]);
   console.log(timeline);
+
+  useEffect(() => {
+    const savedData = localStorage.getItem("timeline")
+    if (savedData) {
+      setTimeline(JSON.parse(savedData))
+    }
+  },[])
+
+  useEffect(() => {
+    if (timeline.length > 0) {
+      localStorage.setItem("timeline",JSON.stringify(timeline))
+    }
+  },[timeline])
 
     const addToTiemeline = (name, type) => {
       const now = new Date();
