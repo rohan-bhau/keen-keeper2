@@ -1,8 +1,10 @@
+import { useTimeline } from '@/context/TimelineContext';
 import Image from 'next/image';
 import React from 'react'
 
 const RightCard = ({ friend }) => {
-    console.log(friend)
+ const { addToTiemeline, timeline } = useTimeline();
+    // console.log(friend)
   return (
     <div className="flex-1">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
@@ -42,7 +44,9 @@ const RightCard = ({ friend }) => {
           Quick Check-In
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Call */}
           <div
+            onClick={() => addToTiemeline(friend.name, "call")}
             className="group border border-[#e9e9e9] shadow-md rounded-md p-5 cursor-pointer
              transform transition-all duration-200 ease-out
              hover:shadow-lg hover:scale-[1.03] hover:bg-gray-50
@@ -57,7 +61,10 @@ const RightCard = ({ friend }) => {
             />
             <p className="text-2xl text-center">Call</p>
           </div>
+
+          {/* TExt */}
           <div
+            onClick={() => addToTiemeline(friend.name, "text")}
             className="group border border-[#e9e9e9] shadow-md items-center rounded-md p-5 cursor-pointer
              transform transition-all duration-200 ease-out
              hover:shadow-lg hover:scale-[1.03] hover:bg-gray-50
@@ -72,7 +79,10 @@ const RightCard = ({ friend }) => {
             />
             <p className="text-2xl text-center">Text</p>
           </div>
+
+          {/* Video */}
           <div
+            onClick={() => addToTiemeline(friend.name, "video")}
             className="group border border-[#e9e9e9] shadow-md rounded-md p-5 cursor-pointer
              transform transition-all duration-200 ease-out
              hover:shadow-lg hover:scale-[1.03] hover:bg-gray-50

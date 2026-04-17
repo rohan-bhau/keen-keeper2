@@ -5,7 +5,7 @@ import friends from "../../../public/data.json";
 
 
 const FriendsSection = () => {
-    console.log(friends)
+    // console.log(friends)
 
     const [loading, setLoading] = useState(true);
 

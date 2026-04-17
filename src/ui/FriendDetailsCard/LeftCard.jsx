@@ -4,7 +4,7 @@ import { FaBoxArchive } from 'react-icons/fa6';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
 
 const LeftCard = ({ friend }) => {
-    console.log(friend);
+    // console.log(friend);
     return (
       <div>
         <div className="border  border-[hsl(0,2%,94%)] shadow-md rounded-md  w-full max-w-[350px] py-6 px-12">

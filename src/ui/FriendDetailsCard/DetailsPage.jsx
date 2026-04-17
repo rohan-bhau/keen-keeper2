@@ -6,7 +6,7 @@ import RightCard from './RightCard';
 const DetailsPage = ({ id }) => {
     
     const friend = friends.find((fr) => fr.id === parseInt(id))
-    console.log(friend)
+    // console.log(friend)
         const [loading, setLoading] = useState(true);
     
         useEffect(() => {

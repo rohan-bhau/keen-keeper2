@@ -5,7 +5,7 @@ import LeftCard from '@/ui/FriendDetailsCard/LeftCard';
 
 const FriendDetailPage = async({ params }) => {
     const {id} = await params
-    console.log(id, "id")
+    // console.log(id, "id")
   return (
     <div>
       {/* this is detail page  */}

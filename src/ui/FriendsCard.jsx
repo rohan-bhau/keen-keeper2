@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const FriendsCard = ({ friend }) => {
-    console.log(friend.id);
+    // console.log(friend.id);
   return (
     <Link
       href={`/friends/${friend.id}`}
