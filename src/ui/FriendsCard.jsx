@@ -23,7 +23,7 @@ const FriendsCard = ({ friend }) => {
         <h2 className="font-bold mt-3 text-xl">{friend.name}</h2>
         <p className="text-[#6474bb] mb-2">{friend.days_since_contact}</p>
       </div>
-      <div className="flex justify-center gap-2">
+      <div className="flex  justify-center gap-2">
         {friend.tags.map((tag, idx) => (
           <p
             key={idx}

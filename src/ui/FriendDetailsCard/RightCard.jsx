@@ -9,7 +9,7 @@ const RightCard = ({ friend }) => {
     item.title.includes(friend.name),
   );
   return (
-    <div className="flex-1">
+    <div className="flex-1 px-2 md:px-10 lg:px-0">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         <div className="border  border-[hsl(0,2%,94%)] shadow-md rounded-md py-8  text-center ">
           <h2 className="font-semibold text-[#244d3f] mb-2 text-xl">
@@ -104,7 +104,7 @@ const RightCard = ({ friend }) => {
       </div>
 
       {/* Recent Interactions */}
-      <div className="border border-[hsl(0,2%,94%)] shadow-md rounded-md mt-6  p-9">
+      <div className="border border-[hsl(0,2%,94%)] shadow-md rounded-md mt-6 p-5  md:p-9">
         <h2 className="text-[#244d3f] font-semibold text-xl mb-4">
           Recent Interactions
         </h2>

@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="lg:flex justify-between container mx-auto text-[#ffffff] border-t border-[#1A8862] p-6">
+      <div className="md:flex  justify-between container mx-auto text-[#ffffff] border-t border-[#1A8862] p-6">
         <p>&copy; 2026 KeenKeeper. All rights reserved.</p>
         <ul className="flex gap-3">
           <li className="hover:text-orange-500 cursor-pointer">
