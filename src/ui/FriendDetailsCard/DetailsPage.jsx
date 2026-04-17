@@ -25,7 +25,7 @@ const DetailsPage = ({ id }) => {
           <span className="loading loading-spinner text-error"></span>
         </div>
       ) : (
-        <div className="flex flex-col md:flex-row gap-6 px-20 ">
+        <div className="flex flex-col lg:flex-row gap-6 px-20 ">
           <LeftCard friend={friend} />
           <RightCard friend={friend} />
         </div>
