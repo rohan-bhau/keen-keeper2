@@ -1,10 +1,31 @@
 "use client";
 import { useTimeline } from "@/context/TimelineContext";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const TimelineCardPage = () => {
   const { timeline } = useTimeline();
+
+
+  const [filter, setFilter] = useState("All");
+  const [sortOrder, setSortOrder] = useState("Newest");
+
+  let filteredTimeline =
+    filter === "All"
+      ? [...timeline]
+      : timeline.filter(
+          (item) => item.type.toLowerCase() === filter.toLowerCase(),
+      );
+  
+  filteredTimeline.sort((a, b) => {
+    if (sortOrder === "Newest") {
+      return b.id - a.id;
+    } else {
+      return a.id - b.id;
+    }
+  });
+
+  
   console.log(timeline);
   if (timeline.length === 0) {
     return (
@@ -21,13 +42,47 @@ const TimelineCardPage = () => {
   }
   return (
     <div>
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+        {/* Type Filter */}
+        <div className="flex gap-2">
+          {["All", "Call", "Text", "Video"].map((type) => (
+            <button
+              key={type}
+              onClick={() => setFilter(type)}
+              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${
+                filter === type
+                  ? "bg-[#244d3f] text-white"
+                  : "bg-white text-gray-500 border border-[#e9e9e9] hover:bg-gray-50"
+              }`}
+            >
+              {type}
+            </button>
+          ))}
+        </div>
+
+        {/* Time Sort Filter */}
+        <div className="flex items-center gap-2 bg-[#f8f9fa] p-1 rounded-lg border border-[#e9e9e9]">
+          {["Newest", "Oldest"].map((order) => (
+            <button
+              key={order}
+              onClick={() => setSortOrder(order)}
+              className={`px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider transition-all ${
+                sortOrder === order
+                  ? "bg-white text-[#244d3f] shadow-sm"
+                  : "text-gray-400 hover:text-gray-600"
+              }`}
+            >
+              {order}
+            </button>
+          ))}
+        </div>
+      </div>
       <div className="space-y-4">
-        {timeline.map((item) => (
+        {filteredTimeline.map((item) => (
           <div
             key={item.id}
             className="flex items-center gap-5 p-5 bg-white border border-[#e9e9e9] rounded-xl shadow-sm hover:shadow-md transition-all"
           >
-
             <div className="w-14 h-14 rounded-full bg-[#f8f9fa] flex items-center justify-center border border-[#244d3f]/5 shrink-0">
               <Image
                 src={`/assets/${item.type.toLowerCase()}.png`}
@@ -38,7 +93,6 @@ const TimelineCardPage = () => {
               />
             </div>
 
-            
             <div className="flex-1">
               <h3 className="font-bold text-[#244d3f] text-lg leading-tight mb-1">
                 {item.title}
@@ -54,7 +108,6 @@ const TimelineCardPage = () => {
               </div>
             </div>
 
-            
             <div className="text-gray-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +125,11 @@ const TimelineCardPage = () => {
             </div>
           </div>
         ))}
+        {filteredTimeline.length === 0 && (
+          <p className="text-center text-gray-400 py-10">
+            No activities found for this filter.
+          </p>
+        )}
       </div>
     </div>
   );
