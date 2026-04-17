@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Rahman",
+    "picture": "/assets/aisha.jpg",
+    "email": "aisha.rahman@gmail.com",
+    "days_since_contact": "18w ago",
+    "status": "Overdue",
+    "tags": ["UNIVERSITY", "BEST FRIEND"],
+    "bio": "Studied computer science together. Loves traveling and photography.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hasan",
+    "picture": "/assets/tanvir.jpg",
+    "email": "tanvir.hasan@yahoo.com",
+    "days_since_contact": "10w ago",
+    "status": "Almost Due",
+    "tags": ["COLLEGUE"],
+    "bio": "Worked together at a startup. Regular gym partner.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "/assets/nusrat.jpg",
+    "email": "nusrat.jahan@outlook.com",
+    "days_since_contact": "5w ago",
+    "status": "On-Track",
+    "tags": ["FAMILY"],
+    "bio": "Cousin who lives in Dhaka. We often chat about family updates.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 4,
+    "name": "Rafiul Karim",
+    "picture": "/assets/7.jpg",
+    "email": "rafiul.karim@gmail.com",
+    "days_since_contact": "62d ago",
+    "status": "Overdue",
+    "tags": ["SCHOOL"],
+    "bio": "High school friend. Used to play football together every weekend.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 5,
+    "name": "Sadia Islam",
+    "picture": "/assets/3.jpg",
+    "email": "sadia.islam@gmail.com",
+    "days_since_contact": "13w ago",
+    "status": "Almost Due",
+    "tags": ["NEIGHBOR"],
+    "bio": "Neighbor and close friend. We often go shopping together.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Mahmudul Haque",
+    "picture": "/assets/8.jpg",
+    "email": "mahmudul.haque@gmail.com",
+    "days_since_contact": "60d ago",
+    "status": "On-Track",
+    "tags": ["HOBBY", "TRAVEL"],
+    "bio": "Professional mentor who guides me in career decisions.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 7,
+    "name": "Farhana Ahmed",
+    "picture": "/assets/5.jpg",
+    "email": "farhana.ahmed@yahoo.com",
+    "days_since_contact": "50d ago",
+    "status": "Overdue",
+    "tags": ["CLUB", "FRIEND"],
+    "bio": "Met in a local book club. We share reading recommendations.",
+    "goal": 14,
+    "next_due_date": "2026-04-12"
+  },
+  {
+    "id": 8,
+    "name": "Imran Chowdhury",
+    "picture": "/assets/imran.jpg",
+    "email": "imran.c@gmail.com",
+    "days_since_contact": "18w ago",
+    "status": "On-Track",
+    "tags": ["BUSINESS", "NETWORK"],
+    "bio": "Met at a networking event. Discuss business ideas regularly.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 9,
+    "name": "Shamima Sultana",
+    "picture": "/assets/4.jpg",
+    "email": "shamima.sultana@gmail.com",
+    "days_since_contact": "41d ago",
+    "status": "Almost Due",
+    "tags": ["TEACHER", "MENTOR"],
+    "bio": "Former teacher who inspired my interest in literature.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 10,
+    "name": "Arif Hossain",
+    "picture": "/assets/10.jpg",
+    "email": "arif.hossain@gmail.com",
+    "days_since_contact": "52w ago",
+    "status": "On-Track",
+    "tags": ["FRIEND", "TRAVEL"],
+    "bio": "Travel companion. We plan trips across Bangladesh together.",
+    "goal": 14,
+    "next_due_date": "2026-04-28"
+  }
+]
