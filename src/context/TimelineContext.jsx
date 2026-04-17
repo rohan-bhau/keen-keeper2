@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useState, useContext } from "react";
+import { toast } from "react-toastify";
 // import { toast } from "react-toastify";
 
 const TimelineContext = createContext();
@@ -25,8 +26,9 @@ export const TimelineProvider = ({ children }) => {
       }),
       type: type,
       title: `${type} with ${name}`,
-      //   toast.success(`${type} added for ${friendName}!`);
+      
     };
+    toast.success(`${type} added for ${name}!`);
 
     setTimeline((prev) => [...prev, newData]);
     console.log(timeline);
