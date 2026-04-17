@@ -8,7 +8,7 @@ const FriendDetailPage = async({ params }) => {
     console.log(id, "id")
   return (
     <div>
-      this is detail page 
+      {/* this is detail page  */}
         <DetailsPage id={id} />
     </div>
   );
